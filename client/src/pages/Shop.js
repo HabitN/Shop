@@ -11,9 +11,9 @@ import { fetchTypes } from '../http/deviceAPI';
 
 const Shop = observer(() => {
     const {device} = useContext(Context)
-    useEffect( () => {
-        fetchTypes().then(data => device.setTypes(data))
-    }, [])
+    // useEffect( () => {
+    //     fetchTypes().then(data => device.setTypes(data))
+    // }, [])
 
     return (
         <Container>
